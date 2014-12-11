@@ -14,6 +14,9 @@
 		02CF99D51A3943E90006FB5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CF99D41A3943E90006FB5E /* Images.xcassets */; };
 		02CF99D81A3943E90006FB5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CF99D61A3943E90006FB5E /* LaunchScreen.xib */; };
 		02CF99E41A3943E90006FB5E /* FWCollectionDialLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF99E31A3943E90006FB5E /* FWCollectionDialLayoutTests.m */; };
+		02CF99F01A3944400006FB5E /* FWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF99EF1A3944400006FB5E /* FWCollectionViewDialLayout.m */; };
+		02CF99F41A3947AC0006FB5E /* FWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF99F21A3947AC0006FB5E /* FWCollectionViewCell.m */; };
+		02CF99F51A3947AC0006FB5E /* FWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02CF99F31A3947AC0006FB5E /* FWCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		02CF99DD1A3943E90006FB5E /* FWCollectionDialLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWCollectionDialLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CF99E21A3943E90006FB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02CF99E31A3943E90006FB5E /* FWCollectionDialLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCollectionDialLayoutTests.m; sourceTree = "<group>"; };
+		02CF99EE1A3944400006FB5E /* FWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCollectionViewDialLayout.h; sourceTree = "<group>"; };
+		02CF99EF1A3944400006FB5E /* FWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCollectionViewDialLayout.m; sourceTree = "<group>"; };
+		02CF99F11A3947AC0006FB5E /* FWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCollectionViewCell.h; sourceTree = "<group>"; };
+		02CF99F21A3947AC0006FB5E /* FWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCollectionViewCell.m; sourceTree = "<group>"; };
+		02CF99F31A3947AC0006FB5E /* FWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FWCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +89,14 @@
 		02CF99C61A3943E90006FB5E /* FWCollectionDialLayout */ = {
 			isa = PBXGroup;
 			children = (
+				02CF99ED1A3944020006FB5E /* Class */,
 				02CF99CB1A3943E90006FB5E /* AppDelegate.h */,
 				02CF99CC1A3943E90006FB5E /* AppDelegate.m */,
 				02CF99CE1A3943E90006FB5E /* ViewController.h */,
 				02CF99CF1A3943E90006FB5E /* ViewController.m */,
+				02CF99F11A3947AC0006FB5E /* FWCollectionViewCell.h */,
+				02CF99F21A3947AC0006FB5E /* FWCollectionViewCell.m */,
+				02CF99F31A3947AC0006FB5E /* FWCollectionViewCell.xib */,
 				02CF99D11A3943E90006FB5E /* Main.storyboard */,
 				02CF99D41A3943E90006FB5E /* Images.xcassets */,
 				02CF99D61A3943E90006FB5E /* LaunchScreen.xib */,
@@ -117,6 +129,15 @@
 				02CF99E21A3943E90006FB5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02CF99ED1A3944020006FB5E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				02CF99EE1A3944400006FB5E /* FWCollectionViewDialLayout.h */,
+				02CF99EF1A3944400006FB5E /* FWCollectionViewDialLayout.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CF99D31A3943E90006FB5E /* Main.storyboard in Resources */,
+				02CF99F51A3947AC0006FB5E /* FWCollectionViewCell.xib in Resources */,
 				02CF99D81A3943E90006FB5E /* LaunchScreen.xib in Resources */,
 				02CF99D51A3943E90006FB5E /* Images.xcassets in Resources */,
 			);
@@ -220,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CF99D01A3943E90006FB5E /* ViewController.m in Sources */,
+				02CF99F41A3947AC0006FB5E /* FWCollectionViewCell.m in Sources */,
 				02CF99CD1A3943E90006FB5E /* AppDelegate.m in Sources */,
 				02CF99CA1A3943E90006FB5E /* main.m in Sources */,
+				02CF99F01A3944400006FB5E /* FWCollectionViewDialLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FWCollectionDialLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FWCollectionDialLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
