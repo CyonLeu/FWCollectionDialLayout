@@ -16,5 +16,10 @@ override layout instance method:
     
 ## Demo image effect :##
    
-   ![image ]()
+   screenshot 1
    
+   ![image ](https://raw.githubusercontent.com/CyonLeu/FWCollectionDialLayout/master/screenshot2.png)
+   
+   screenshot 2
+   
+   ![image ](https://raw.githubusercontent.com/CyonLeu/FWCollectionDialLayout/master/screenshot1.png)
