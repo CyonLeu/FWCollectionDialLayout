@@ -15,10 +15,9 @@ NSString *const kFWCollectionViewCell = @"FWCollectionViewCell";
 
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *currentCountLabel;
-
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
 @property (assign, nonatomic) NSInteger cellCount;
 
 @end

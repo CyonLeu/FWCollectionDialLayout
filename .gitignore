@@ -1,0 +1,5 @@
+*.config
+*.xcuserstate
+
+#folder
+xcshareddata/
